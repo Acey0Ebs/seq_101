@@ -12,9 +12,9 @@ Date:
 March 31, 2026
 ------------------------------------------------------*/
 
-module seq_101(out,state,in,clk,rst_n);
+module seq_101(out,state,in,clk_50,rst_n);
 input in;
-input clk;
+input clk_50;
 input rst_n;
 output reg out;
 output reg [1:0] state;

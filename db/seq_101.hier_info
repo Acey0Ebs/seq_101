@@ -38,6 +38,8 @@ clk_in => tick_cnt[21].CLK
 clk_in => tick_cnt[22].CLK
 clk_in => tick_cnt[23].CLK
 clk_in => tick_cnt[24].CLK
+clk_in => tick_cnt[25].CLK
+clk_in => tick_cnt[26].CLK
 clk_in => clk_led~reg0.CLK
 clk_in => clk_out~reg0.CLK
 
