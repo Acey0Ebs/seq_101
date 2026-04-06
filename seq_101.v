@@ -19,6 +19,12 @@ input rst_n;
 output reg out;
 output reg [1:0] state;
 
+//clock 3sec period
+clk_div div(
+    .clk_out(clk),
+    .clk_led(clk_led),
+    .clk_in(clk_50));
+
 //state assignment
 parameter [1:0] S0 = 2'b00;
 parameter [1:0] S1 = 2'b01;

@@ -6,7 +6,7 @@ reg in;
 reg clk;
 reg rst_n;
 wire out;
-wire state;
+wire [1:0] state;
 
 //instantiate seq_101
 seq_101 dut (
