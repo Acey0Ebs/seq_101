@@ -12,18 +12,12 @@ Date:
 March 31, 2026
 ------------------------------------------------------*/
 
-module seq_101(out,state,in,clk_50,rst_n);
+module seq_101(out,state,in,clk,rst_n);
 input in;
-input clk_50;
+input clk;
 input rst_n;
 output reg out;
 output reg [1:0] state;
-
-//clock 3sec period
-clk_div div(
-    .clk_out(clk),
-    .clk_led(clk_led),
-    .clk_in(clk_50));
 
 //state assignment
 parameter [1:0] S0 = 2'b00;

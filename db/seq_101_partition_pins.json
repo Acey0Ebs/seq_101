@@ -16,6 +16,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk_led",
+					"strict" : false
+				},
+				{
 					"name" : "in",
 					"strict" : false
 				},
@@ -24,7 +28,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_50",
+					"name" : "clk_in",
 					"strict" : false
 				}
 			]
