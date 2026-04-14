@@ -20,10 +20,10 @@ output reg out;
 output reg [1:0] state;
 
 //state assignment
-parameter [1:0] S0 = 2'b00;
-parameter [1:0] S1 = 2'b01;
-parameter [1:0] S2 = 2'b10;
-parameter [1:0] S3 = 2'b11;
+localparam [1:0] S0 = 2'b00;
+localparam [1:0] S1 = 2'b01;
+localparam [1:0] S2 = 2'b10;
+localparam [1:0] S3 = 2'b11;
 reg [1:0] pre;
 reg [1:0] nxt;
 
@@ -33,7 +33,7 @@ always@(in,pre)begin
 		S0: nxt = in? S1: S0;
 		S1: nxt = in? S1: S2;
 		S2: nxt = in? S3: S0;
-		S3: nxt = in? S1: S0;
+		S3: nxt = in? S1: S2;
 		default: nxt = S0;
 	endcase
 end
